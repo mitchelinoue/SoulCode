@@ -1,0 +1,43 @@
+h3 {
+    background-color: red;
+}
+
+.box1 {
+    background-color: coral;
+    padding: 16px;
+    margin: 8px;
+}
+
+.box2 {
+    background-color: lightgreen;
+    padding: 8px 20px 4px 8px;
+    margin: 8px 8px 20px 40px;
+    
+}
+.box3 {
+    background-color: lightpink;
+    border: 5px solid darkblue;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+}
+.box4 {
+    background-color: lightslategray;
+    width: 400px;
+    padding: 20px;
+    border: 5px solid rebeccapurple;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("/html/img/pexels-matthew-zheng-4021367.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
