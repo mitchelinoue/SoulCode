@@ -23,17 +23,19 @@
         function multiplica() {
             const num = document.getElementById('num').value
             const quant = document.getElementById('quant').value
-        
+            document.querySelectorAll(".resp").forEach(el => el.remove());
+            
             for(i = 1; i <= quant; i++) {
+                
                 let res = num * i;
                 let newDiv = document.createElement("div")
+                newDiv.className = "resp"
                 let newContent = document.createTextNode(`${num} x ${i} = ${res}`)
                 newDiv.appendChild(newContent)
                 let currentDiv = document.getElementById("result");
                 document.body.insertBefore(newDiv,currentDiv)
             }
         }
-        
     </script>
 </body>
 </html>

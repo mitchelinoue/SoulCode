@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--Faça um algoritmo para adicionar 20 valores em um array e depois imprima-os no HTML. Evite que o array possua valores duplicados.-->
+    <script>
+        const numeros = [20]
+
+        for(i = 0; i < 20; i++) {
+
+            let num = parseInt(prompt(`Me passo o ${i+1}º valor`))
+
+            while(numeros.includes(num)){
+                num = parseInt(prompt(`Esse valor já existe, mande outro`))
+            }
+            numeros[i] = num
+            document.write(numeros[i] + '<br>')
+        }
+    </script>
+</body>
+</html>
