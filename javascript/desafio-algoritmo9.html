@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 9. Leia a velocidade máxima permitida em uma avenida e a velocidade com que o motorista
+estava dirigindo nela e calcule a multa que uma pessoa vai receber, sabendo que são
+pagos: 
+a) 50 reais se o motorista estiver ultrapassar em até 10km/h a velocidade permitida (ex.: velocidade máxima: 50km/h; motorista a 60km/h ou a 56km/h); 
+b) 100 reais, se o motorista ultrapassar de 11 a 30 km/h a velocidade permitida. 
+c) 200 reais, se estiver acima de 31km/h da velocidade permitida. -->
+
+    <script>
+        const velocidade = parseFloat(prompt('Me passe a velocidade do carro'))
+        const velPerm = parseFloat(prompt('Me passe a velocidade máxima permitida no trajeto'))
+
+        if(velocidade > velPerm){
+            if(velocidade - velPerm <= 10){
+                alert('A multa será de 50 reais')
+            } else if (velocidade - velPerm <= 30){
+                alert('A multa será de 100 reais')
+            } else {
+                alert('A multa será de 200 reais')
+            }
+
+        } else {
+            alert('Não há multa')
+        }
+    </script>
+    
+</body>
+</html>
