@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- Crie um algortimo que recebe informações de 15 produtos. Cada produto possui nome, marca, uma foto (link de uma imagem da internet), preço unitário e a quantidade de produtos em estoque. Ao receber essas informações dos produtos, imprima no HTML essas informações de cada produto e o produto entre o preço e a quantidade de produtos em estoque (preço total). -->
+    <script>
+        produto = {
+            nome: [],
+            marca: [],
+            foto: [],
+            precoUni: [],
+            quantidade: [],
+        }
+
+        for(i = 0; i < 2; i++){
+            produto.nome[i] = prompt(`Qual é o nome do produto ${i + 1}?`)
+            produto.marca[i] = prompt(`Qual a marca do produto ${i + 1}?`)
+            produto.foto[i] = prompt(`Qual a foto do produto ${i + 1}?`)
+            produto.precoUni[i] = prompt(`Qual o preço do produto ${i + 1}?`)
+            produto.quantidade[i] = prompt(`Qual a quantidade do produto ${i + 1}?`)
+
+            document.write(`
+            Nome do produto ${i + 1}: ${produto.nome[i]}<br>
+            Marca do produto ${i + 1}: ${produto.marca[i]}<br>
+            Foto do produto ${i + 1}: <img src="${produto.foto[i]}" alt="" width="100px"><br>
+            Preço do produto ${i + 1}: R$${produto.precoUni[i]}<br>
+            Quantidade do produto ${i + 1}: ${produto.quantidade[i]}<br>
+            Preço total do produto ${i + 1}: R$${Number(produto.precoUni[i]) * Number(produto.quantidade[i])}<hr>
+            `)
+        }
+    </script>
+</body>
+</html>
