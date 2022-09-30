@@ -1,0 +1,26 @@
+body{
+
+    background-image: url("/html/img/luzes-a-noite-e-renderizacao-de-estadio-de-futebol-3d_3544-1085.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+table{
+    background-color: rgba(0, 0, 0, 0.305);
+    width: 500px;
+    height: 650px;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.lib {
+    color: rgb(68, 155, 68);
+}
+.copa {
+    color: orange;
+}
+.reb {
+    color: red;
+}
