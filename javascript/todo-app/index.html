@@ -32,6 +32,8 @@
       </header>
 
       <form action="#" id="todo-form">
+
+        <!-- input text -->
         <div class="m-3 d-flex">
           <input
             type="text"
@@ -44,19 +46,76 @@
             <span class="material-symbols-outlined"> add </span>
           </button>
         </div>
+
+        <!--input radio -->
+        <div
+          class="d-flex p-3 mb-2 bg-light text-dark ms-3 me-3 py-1 rounded"
+          id="alert"
+        >
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio1"
+              value="option1"
+              required
+            />
+            <label
+              class="form-check-label text-success fw-bold"
+              for="inlineRadio1"
+              >Sem pressa</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio2"
+              value="option2"
+            />
+            <label
+              class="form-check-label text-warning fw-bold"
+              for="inlineRadio2"
+              >Importante</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio3"
+              value="option3"
+            />
+            <label
+              class="form-check-label text-danger fw-bold"
+              for="inlineRadio3"
+              >Urgente</label
+            >
+          </div>
+        </div>
       </form>
+
 
       <section id="todos-list" class="d-flex flex-column mx-4 my-2 flex-grow-1">
 
+
         <!-- <div class="card bg-warning">
-          <div class="card-body d-flex align-items-center">
-            <p class="todo-text flex-grow-1 text-truncate">Estudar DOM</p>
+          <div class="card-body d-flex align-items-center ">
+
+            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-warning border border-light rounded-circle">
+            </span>
+            <p class="todo-text flex-grow-1 text-truncate ms-2">Estudar DOM</p>
+            
             <button class="btn delete-todo">
               <span class="material-symbols-outlined">delete</span>
             </button>
           </div>
         </div> -->
         
+
       </section>
     </main>
 
