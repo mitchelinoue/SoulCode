@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 10. Uma Cia de pulverização utiliza avião para pulverizar lavouras. Os custos de
+pulverização dependem do tipo de praga e da área a ser contratada conforme a tabela:
+Tipo 1 – ervas daninhas R$ 50,00 por acre;
+Tipo 2 – gafanhotos R$ 100,00 por acre;
+Tipo 3 – broca R$ 150,00 por acre;
+Tipo 4 – todos acima R$ 250,00 por acre.
+Se a área a ser pulverizada for superior a 1000 acres, o fazendeiro tem um desconto de
+5%. Em adição, qualquer fazendeiro cujo custo for maior do que R$ 750,00 tem um
+desconto de 10% sobre o valor que ultrapassar os R$ 750,00. Caso ambos os descontos se
+aplicam o da área é calculado antes. Fazer um algoritmo que leia: o tipo de pulverização
+(1 a 4) e área a ser pulverizada; e imprima o valor a ser pago. -->
+
+    <script>
+        const area = parseFloat(prompt('Qual a área a ser pulverizada?'))
+        const tipo = parseInt(prompt(`
+        Qual o tipo de praga a ser pulverizada? Digite o número correspondente:
+        1 - ervas daninhas
+        2 - gafanhotos 
+        3 - broca
+        4 - todos acima 
+        `))
+
+        let valor = 0
+
+        if(tipo === 1){
+            valor = area * 50
+        } else if(tipo === 2){
+            valor = area * 100
+        } else if(tipo === 3){
+            valor = area * 150
+        } else if(tipo === 4){
+            valor = area * 250
+        } else {
+            alert('Digite um valor válido')
+        }
+
+        if (area > 1000 && valor > 750){
+            valor = valor * 0.95
+            valor = valor * 0.90
+        } else if (area > 1000){
+            valor = valor * 0.95
+        } else if (valor > 750){
+            valor = valor * 0.90
+        } else {
+            valor = valor
+        }
+
+        alert(`Seu total será de ${valor} reais`)
+
+    </script>
+    
+</body>
+</html>

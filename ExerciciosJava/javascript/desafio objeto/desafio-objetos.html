@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*Crie um algortimo que recebe informações de 15 produtos. Cada produto possui nome, marca, uma foto (link de uma imagem da internet),
+         preço unitário e a quantidade de produtos em estoque. Ao receber essas informações dos produtos, 
+         imprima no HTML essas informações de cada produto e o produto entre o preço e a quantidade de produtos em estoque (preço total).
+         */
+
+        var produtos = []
+
+        for (let i = 0; i < 2; i++) { 
+
+            const nome = prompt(`Digite o nome do ${i + 1}º produto`)
+            const marca = prompt(`Digite a marca do ${i + 1}º produto`)
+            const foto = prompt(`Digite a foto da foto do ${i + 1}º produto`)
+            const preçoUnit = prompt(`Digite o preço do ${i + 1}º produto`)
+            const quantidade = prompt(`Digite a quantidade do ${i + 1}º produto`)
+
+            const prod = {
+                nome: nome,
+                marca: marca,
+                foto: foto,
+                preço: preçoUnit,
+                quantidade: quantidade
+            }
+            
+            produtos.push(prod) 
+        
+            document.write(`Nome produto ${i + 1}: ${produtos[i].nome}<br/>`)
+            document.write(`Marca produto ${i + 1}: ${produtos[i].marca}<br/>`)
+            document.write(`Foto produto ${i + 1}: ${produtos[i].foto}<br/>`)
+            document.write(`Preço produto ${i + 1}: R$ ${produtos[i].preço}<br/>`)
+            document.write(`Quantidade produto ${i + 1}: R$ ${produtos[i].quantidade}<br/>`)
+            document.write(`Valor total produto ${i + 1}: R$ ${produtos[i].preço * produtos[i].quantidade}<br/><hr>`)
+        }
+
+       console.log(produtos)
+ </script>
+
+</body>
+
+</html>

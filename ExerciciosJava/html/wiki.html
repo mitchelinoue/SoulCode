@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br
+">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Estudo do HTML5</h1>
+        <p>Conceitos introdutórios da linguagem</p>
+        <nav> <!--nav agrupa links de navegação-->
+            <ol>
+                <li><a href="#intro">Introdução</a></li>
+
+            </ol>
+        </nav>
+    </header>
+    <main> <!--Conteúdo principal da página-->
+        <section> <!--separa tópicos ou conteúdo-->
+            <h3>Uso de tags</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt in reprehenderit praesentium architecto repudiandae alias unde aliquam ea adipisci enim tempore sapiente facilis, quisquam, facere veritatis accusantium, nesciunt consequatur dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloribus amet aliquam veniam labore quae officia voluptate nesciunt, voluptates nihil placeat non aperiam necessitatibus optio mollitia illo ad. Sapiente, voluptate?</p>
+        </section>
+        <section>
+            <h3>Uso de tabelas</h3>
+            <table border = "1" cellpadding="3" style="border-collapse: collapse;">
+                <thead> <!--cabeçalho da tabela-->
+                    <tr>
+                        <th colspan="4">Usuários do Sistema</th>
+                    </tr>
+                    <tr> <!--table row coluna-->
+                        <th>Tipo</th>
+                        <th>Nome</th> <!--table head / título das colunas-->
+                        <th>CPF</th>
+                        <th>Data Nasc.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Funcionário</td>
+                        <td>Mitchel Inoue</td> <!--table data-->
+                        <td>000.000.000-00</td>
+                        <td>11/08/1989</td>
+                    </tr>
+                    <tr>
+                        <td>Maria Conceição</td> 
+                        <td>000.000.000-00</td>
+                        <td>21/09/1995</td>
+                    </tr>
+                    <tr>
+                        <td>Cliente</td>
+                        <td>José Almeida</td> 
+                        <td>000.000.000-00</td>
+                        <td>15/05/2000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <table border="1" cellpadding="4" style="border-collapse: collapse;">
+                <tr>
+                    <td colspan="2" style="text-align: center;">Célula 1-1 / 1-2</td>
+                    <td>Célula 1-3</td>
+                </tr>
+                <tr>
+                    <td>Célula 2-1</td>
+                    <td>Célula 2-2</td>
+                    <td>Célula 2-3</td>
+                </tr>
+
+            </table>
+        </section>
+    </main>
+    
+    <hr> <!--linha horizontal-->
+    
+    <footer>
+        © &copy;
+        <script>
+            document.write(new Date().getFullYear())
+        </script>
+        SoulCode Academy
+    </footer>
+</body>
+</html>

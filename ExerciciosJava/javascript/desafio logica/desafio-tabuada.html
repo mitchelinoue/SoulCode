@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" name="" id="num">
+    <input type="number" name="" id="quant">
+    <button onclick="multiplica()">calcule</button>
+    <div id="result"></div>
+
+
+    <script>
+        function multiplica() {
+            const num = document.getElementById('num').value
+            const quant = document.getElementById('quant').value
+            document.querySelectorAll(".resp").forEach(el => el.remove());
+            
+            for(i = 1; i <= quant; i++) {
+                
+                let res = num * i;
+                let newDiv = document.createElement("div")
+                newDiv.className = "resp"
+                let newContent = document.createTextNode(`${num} x ${i} = ${res}`)
+                newDiv.appendChild(newContent)
+                let currentDiv = document.getElementById("result");
+                document.body.insertBefore(newDiv,currentDiv)
+            }
+        }
+    </script>
+</body>
+</html>
