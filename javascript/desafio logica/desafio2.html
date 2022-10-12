@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Crie um programa que pergunte quantos produtos um cliente pegou e depois peça para que ele 
+        informe o preço de cada produto. Ao recuperar possuir o valor de cada produto, faça a soma 
+        total da compra e informe o maior e o menor preço que foi informado*/
+
+        const qtdProdutos = parseInt(prompt('Informe a quantidade de produtos'))
+
+        const precoProdutos = [];
+
+        let total = 0
+        let maisCaro = 0
+        let maisBarato = Infinity
+
+        for (i = 0; i < qtdProdutos; i++) {
+            precoProdutos[i] = parseFloat(prompt(`Informe o preço do ${i+1}º produto`))
+
+            total = total + precoProdutos[i]
+
+            if(precoProdutos[i] > maisCaro) {
+                maisCaro = precoProdutos[i]
+            }
+            if(precoProdutos[i] < maisBarato) {
+                maisBarato = precoProdutos[i]
+            }
+        }
+
+        // método for of que é utilizado para percorrer arrays:
+        // for(let preco of precoProdutos) {
+        //     total = total + preco
+        // }
+        
+        alert(`Seu total será de ${total} R$ e o valor mais caro é de: ${maisCaro} e o mais barato é de: ${maisBarato}`)
+    </script>
+</body>
+</html>

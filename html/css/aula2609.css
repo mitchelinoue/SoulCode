@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box1{
+    background-color: cadetblue;
+    
+}
+
+.box2{
+    background-color: chocolate;
+}
+
+.box3{
+    background-color: tomato;
+}
+
+.box4{
+    background-color: steelblue;
+}
+
+.container-flex{
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*serve para respeitar as dimensões propostas, quebra linha qndo ñ tem espaço*/
+    justify-content: center; /*cuida dos elementos no eixo main*/
+    align-items:center; /*cuida ods itens no eixo cross/cruzado*/
+    /*cuida do espaço extra do container*/
+    align-content: center;
+    gap: 16px;
+    height: 350px;
+}
+
+.box1, .box2, .box3, .box4{
+    width: 200px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.container-flex2{
+    display: flex;
+    background-color: orange;
+    height: 200px;
+    flex-wrap: wrap;
+}
+
+.box5{
+    background-color: brown;
+    flex: 1;
+}
+
+.box6{
+    background-color: teal;
+    flex: 3;
+}
+
+.box7{
+    background-color: yellow;
+    width: 600px;
+    
+}

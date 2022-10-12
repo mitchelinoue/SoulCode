@@ -1,0 +1,95 @@
+* {
+  /*Garante que os elementos respeitem as dimensões quando possuem padding e border*/
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.but {
+  background-color: #4caf50;
+  border: 1px solid black;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 5px;
+  margin: 6px 8px;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px black;
+}
+
+.but:hover {
+  background-color: rgb(65, 137, 113);
+  transform: translateX(-5px);
+}
+
+.but:active {
+  box-shadow: inset 3px 3px 10px black;
+  transform: translateY(2px);
+}
+
+.but-azul {
+  /*multiplas class a hierarquia é que a de baixo é a que fica*/
+  background-color: cornflowerblue;
+}
+
+.tab {
+  width: 400px;
+  border-collapse: collapse;
+  border-style: hidden;
+  margin: auto;
+  text-align: center;
+}
+
+.tab:active {
+  background-color: blue;
+}
+
+.tab td,
+.tab th {
+  border: 2px solid blue;
+  padding: 8px;
+}
+
+.tab th {
+  background-color: cornflowerblue;
+  padding: 8px 0px;
+  color: bisque;
+}
+
+.tab tr:nth-child(odd) {
+  background-color: darkkhaki;
+}
+
+.tab tr:hover {
+  background-color: rgba(0, 0, 0, 0.236);
+}
+
+.form {
+  border-radius: 6px;
+  background-color: #dbc9c9;
+  padding: 20px 16px;
+  width: 300px;
+  margin: auto;
+}
+
+.form input {
+  width: 100%;
+  padding: 12px 8px;
+  border: 1px solid black;
+  border-radius: 6px;
+  margin-top: 3px;
+}
+
+.toda-largura {
+  width: 100%;
+  margin: 6px 0px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+::placeholder {
+  color: rgb(210, 30, 30);
+}

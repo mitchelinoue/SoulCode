@@ -1,0 +1,36 @@
+p {
+    color: aquamarine;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+body{
+    background-color:black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*
+Uso o id quando quero estilzar um elemento específico
+*/
+
+#meu-h1{
+    font-weight: 100;
+    color: white;
+}
+/*
+Posso usar a class em diversos elementos diferentes 
+*/
+
+.cabecalho{
+    color: crimson;
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.quadrado{
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+    border-radius: 10px;
+    border-color: aquamarine;
+}
